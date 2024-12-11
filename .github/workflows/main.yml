@@ -1,0 +1,13 @@
+name: Simple Test
+on:
+  workflow_dispatch:
+
+jobs:
+  test-run:
+    runs-on: windows-latest
+    steps:
+      - name: Simple Test
+        run: |
+          echo "Testing workflow"
+          dir
+          whoami 
